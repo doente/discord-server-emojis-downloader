@@ -5,7 +5,7 @@ Download all emojis from a especific server.
 ```
 npm install
 ```
-Add your account token and serverID at [config.json](config.json)
+Add your account token and server ID at [config.json](config.json)
 ```
 node index.js
 ```
