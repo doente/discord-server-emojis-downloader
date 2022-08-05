@@ -22,7 +22,7 @@ async function main() {
         }
 
         response.data.pipe(fs.createWriteStream(`./emojis/${format}`));
-        console.log(`[${dones++}/${res.data.length}] Complete`)
+        console.log(`[${dones++}/${res.data.length}] Complete`);
     }
 };
 
