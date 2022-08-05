@@ -18,7 +18,7 @@ async function main() {
         let response = await axios.get(`https://cdn.discordapp.com/emojis/${format}`, { responseType: "stream" })
 
         if (!fs.existsSync('./emojis')) {
-            fs.mkdirSync('./emojis')
+            fs.mkdirSync('./emojis');
         }
 
         response.data.pipe(fs.createWriteStream(`./emojis/${format}`));
